@@ -15,14 +15,15 @@ def find_version():
 
 
 setup(
-    name='appmode',
+    name='appmode-aiidalab',
     license='MIT',
     version = find_version(),
     author = 'Ole Schuett',
     author_email = 'ole.schuett@cp2k.org',
-    url='http://github.com/oschuett/appmode',
-    description='A Jupyter extensions that turns notebooks into web applications.',
-
+    url='http://github.com/materials-org/appmode-aiidalab',
+    description='A Jupyter extensions that turns notebooks into web applications, with modifications for AiiDA lab.',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     packages=["appmode"],
     include_package_data = True,
     install_requires=['notebook>=5'],
